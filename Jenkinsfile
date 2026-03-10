@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Clone Repository'){
             steps{
-                git https://github.com/Ajeaykumar/Calculator.git
+                git https://github.com/Ajeaykumar/Calculator
             }
         }
         stage('Build Docker Image'){

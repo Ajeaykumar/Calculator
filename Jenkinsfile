@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Clone Repository'){
             steps{
-                git https://github.com/Ajeaykumar/Calculator.git
+                checkout scmGit(branchs: [[name: '*/master']], userRemoteConfigs: [[url: 'https://github.com/Ajeaykumar/Calculator.git' ]])
             }
         }
         stage('Build Docker Image'){
